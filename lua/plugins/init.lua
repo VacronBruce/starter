@@ -1,4 +1,8 @@
 return {
+  require("plugins.dap"),
+  require("plugins.plantuml"),
+  require("plugins.rust"),
+  require("plugins.crates"),
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
@@ -12,14 +16,5 @@ return {
       require "configs.lspconfig"
     end,
   },
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
 }
+
